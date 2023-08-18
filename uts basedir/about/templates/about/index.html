@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/bootstrap.css'%}">
+</head>
+<body>
+    <img  src="{% static 'about/img/about.jpg' %}" alt="">
+    <h2>Halaman about</h2>
+    
+    <div id="menu">
+       <ul>
+           <li><a href="/" class="">Home</a></li>
+           <li><a href="/about/" class="">about</a></li>
+           <li><a href="/buku/" class="">jadwal</a></li>
+           <li><a href="/tamu/" class="">pemesanan</a></li>
+       </ul>
+    </div>
+
+    <div class="container">
+        <p></p>
+        <!--https://getbootstrap.com/ocs/4.5/components/alerts/-->
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">tentang travel</h4>
+            <p>dapat mengantar anda sampai ketujuan dan kenyamanan anda adalah prioritas kami dalam membrikan
+                pelayann
+            </p>
+                <hr>
+            <p class="mb-0">kami juga mempunyai beragam penawaran terbaik dalam aplikasi kami seperti potongan harga,
+                diskon liburan dan lain - lain
+            </p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <span class="text-dark">Copyright 2022</span>
+        </div>
+    </footer>
+
+    <script scr="{%static 'vendor/boostrap/boostrap.js'%}" type="text/javascripts"></script>
+    <script scr="{%static 'vendor/boostrap/jquery-3.3.1.slim.min.js'%}" type="text/javascripts"></script>
+    <script scr="{%static 'vendor/boostrap/popper.min.js'%}" type="text/javascripts"></script>
+        
+</body>
+</html>
